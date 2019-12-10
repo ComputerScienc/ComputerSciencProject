@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1576012656 source:c:\users\miller.caden\documents\github\computersciencproject\computersciencproject\src\uobject.cpp
+	"UObject.h"
+
+1576012656 c:\users\miller.caden\documents\github\computersciencproject\computersciencproject\include\uobject.h
+
+1576014897 source:c:\users\miller.caden\documents\github\computersciencproject\computersciencproject\src\main.cpp
+	<UGame.h>
+
+1576017266 c:\users\miller.caden\documents\github\computersciencproject\computersciencproject\include\ugame.h
+	<typeinfo>
+
+1576014576 c:\users\miller.caden\documents\github\computersciencproject\computersciencproject\include\uworld.h
+	"UObject.h"
+	"UGame.h"
+
+1576014843 source:c:\users\miller.caden\documents\github\computersciencproject\computersciencproject\src\ugame.cpp
+	"UGame.h"
+
+1576014267 source:c:\users\miller.caden\documents\github\computersciencproject\computersciencproject\src\uworld.cpp
+	"UWorld.h"
+
