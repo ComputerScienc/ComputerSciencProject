@@ -12,10 +12,18 @@
 				<Option type="1" />
 				<Option compiler="gcc" />
 				<Compiler>
-					<Add option="-std=c++14" />
+					<Add option="-std=c++11" />
 					<Add option="-g" />
+					<Add directory="src/" />
+					<Add directory="src/Engine" />
 					<Add directory="include" />
 				</Compiler>
+				<Linker>
+					<Add option="-lglfw3" />
+					<Add option="-lgdi32" />
+					<Add option="-lopengl32" />
+					<Add directory="lib" />
+				</Linker>
 			</Target>
 			<Target title="Release">
 				<Option output="bin/Release/ComputerSciencProject" prefix_auto="1" extension_auto="1" />
@@ -24,8 +32,9 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
-					<Add option="-std=c++14" />
+					<Add option="-std=c++11" />
 					<Add directory="include" />
+					<Add directory="src/Engine" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -35,13 +44,23 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="include/UGame.h" />
-		<Unit filename="include/UObject.h" />
-		<Unit filename="include/UWorld.h" />
+		<Unit filename="src/Engine/AActor.cpp" />
+		<Unit filename="src/Engine/AActor.h" />
+		<Unit filename="src/Engine/FTransform2D.cpp" />
+		<Unit filename="src/Engine/FTransform2D.h" />
+		<Unit filename="src/Engine/UGame.cpp" />
+		<Unit filename="src/Engine/UGame.h" />
+		<Unit filename="src/Engine/ULog.cpp" />
+		<Unit filename="src/Engine/ULog.h" />
+		<Unit filename="src/Engine/UObject.cpp" />
+		<Unit filename="src/Engine/UObject.h" />
+		<Unit filename="src/Engine/UWindow.cpp" />
+		<Unit filename="src/Engine/UWindow.h" />
+		<Unit filename="src/Engine/UWorld.cpp" />
+		<Unit filename="src/Engine/UWorld.h" />
 		<Unit filename="src/Main.cpp" />
-		<Unit filename="src/UGame.cpp" />
-		<Unit filename="src/UObject.cpp" />
-		<Unit filename="src/UWorld.cpp" />
+		<Unit filename="src/UWorld_Game.cpp" />
+		<Unit filename="src/UWorld_Game.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
