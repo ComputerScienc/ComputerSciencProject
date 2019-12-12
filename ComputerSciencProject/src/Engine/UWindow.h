@@ -3,7 +3,7 @@
 
 #include "UObject.h"
 
-#include <GLFW\glfw3.h>
+#include <SDL2\sdl.h>
 
 //Uses GLFW because if not the game would not create windows with crossplatformatibility
 class UWindow : public UObject
@@ -12,10 +12,12 @@ class UWindow : public UObject
         UWindow();
         virtual ~UWindow();
 
-        GLFWwindow* window;
+        SDL_Window* window;
 
+        void init();
         void openWindow();
         void closeWindow();
+        void shutdown();
 
     protected:
 

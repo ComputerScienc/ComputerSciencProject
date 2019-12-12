@@ -17,7 +17,6 @@ class FTransform2D : public UObject
         FTransform2D(float newRotation);
         FTransform2D(glm::vec2 newPosition, glm::vec2 newScale);
 
-
         glm::vec2 position;
         glm::vec2 scale;
         float rotation;

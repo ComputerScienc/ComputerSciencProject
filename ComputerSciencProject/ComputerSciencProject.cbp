@@ -19,9 +19,11 @@
 					<Add directory="include" />
 				</Compiler>
 				<Linker>
-					<Add option="-lglfw3" />
-					<Add option="-lgdi32" />
+					<Add option="-lsdl2" />
+					<Add option="-lsdl2main" />
+					<Add option="-lglu32" />
 					<Add option="-lopengl32" />
+					<Add option="-lgdi32" />
 					<Add directory="lib" />
 				</Linker>
 			</Target>
@@ -44,6 +46,8 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="include/UGame_ComputerSciencProject.h" />
+		<Unit filename="include/UInput.h" />
 		<Unit filename="src/Engine/AActor.cpp" />
 		<Unit filename="src/Engine/AActor.h" />
 		<Unit filename="src/Engine/FTransform2D.cpp" />
@@ -59,6 +63,8 @@
 		<Unit filename="src/Engine/UWorld.cpp" />
 		<Unit filename="src/Engine/UWorld.h" />
 		<Unit filename="src/Main.cpp" />
+		<Unit filename="src/UGame_ComputerSciencProject.cpp" />
+		<Unit filename="src/UInput.cpp" />
 		<Unit filename="src/UWorld_Game.cpp" />
 		<Unit filename="src/UWorld_Game.h" />
 		<Extensions>

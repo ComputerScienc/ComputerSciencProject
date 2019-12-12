@@ -18,9 +18,9 @@ class UWorld : public UObject
 
 
         //Only a UGame object should control these functions
-        void BeginWorld();
-        void UpdateWorld();
-        void EndWorld();
+        virtual void BeginWorld();
+        virtual void UpdateWorld();
+        virtual void EndWorld();
 
         //Actors that are in the world
         std::vector<AActor*> worldActors;
